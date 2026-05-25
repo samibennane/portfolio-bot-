@@ -3,14 +3,19 @@
 import logging
 from llama_index.core import VectorStoreIndex, PromptTemplate
 from llama_index.core.query_engine import BaseQueryEngine
+from datetime import date
+
 
 import config
+
+today = date.today().strftime("%d/%m/%Y")
 
 logger = logging.getLogger(__name__)
 
 PORTFOLIO_PROMPT = PromptTemplate(
     """
 You are Sami Bennane's personal AI assistant on his portfolio website.
+Today's date is {today}.
 Use ONLY the context below to answer. Do not invent facts.
 Reply in the same language as the question (French or English).
 Be concise (2-4 sentences max) and warm.
