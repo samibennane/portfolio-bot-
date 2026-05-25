@@ -1,4 +1,0 @@
-- rajouter la lecture d'excels
-- modifier des éléments du front
-- rajouter une notio de mémoire
-- m'assurer qu'il réponde bien en français quand je lui pose une question en français
